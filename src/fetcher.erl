@@ -38,7 +38,7 @@ fetch(Url) when is_list(Url) ->
 	fetch(Url, []).
 
 fetch(Url, Headers) when is_list(Url) and is_list(Headers) ->
-	case http:request(get, {Url, Headers}, [], []) of
+	case httpc:request(get, {Url, Headers}, [], []) of
 		{ok, Result} -> 
 			{Status, RespHeaders, Body} = Result,
 			{ok, extract_content_type(RespHeaders), Status, RespHeaders, Body};
