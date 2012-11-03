@@ -1,11 +1,12 @@
 {application, atomizer,
  [
-  {description, ""},
+  {description, "RSS Feed Fetcher and Parser"},
   {vsn, "0.0.1"},
   {registered, []},
   {applications, [
                   kernel,
-                  stdlib
+                  stdlib,
+                  inets
                  ]},
   {mod, { atomizer_app, []}},
   {env, []}
