@@ -80,8 +80,8 @@ examine_content_type(ContentType) ->
 parse(unknown, _Feed) ->
 	unknown;
 
-parse(rss, _Feed) ->
-	void;
+parse(rss, Feed) ->
+	rss_parser:parse_feed(Feed);
 
 parse(atom, Feed) ->
 	atom_parser:parse_feed(Feed).
