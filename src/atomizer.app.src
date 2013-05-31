@@ -8,6 +8,5 @@
                   stdlib,
                   inets
                  ]},
-  {mod, { atomizer_app, []}},
   {env, []}
  ]}.
