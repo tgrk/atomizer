@@ -94,7 +94,7 @@ handle_event({characters, Text}, [{cmd, entryupdatedtext}, {md, Feed}, {entries,
 	build_state(entry, Feed, [UpdatedEntry|T]);
 
 handle_event({startElement, _NS, "content", _, _Attrs}, [{cmd, entry}, {md, Feed}, {entries, Entries}]) ->
-	build_state(entry, Feed, Entries);
+	build_state(entrycontenttext, Feed, Entries);
 
 handle_event({characters, Text}, [{cmd, entrycontenttext}, {md, Feed}, {entries, Entries}]) ->
  	[Entry|T] = Entries,
