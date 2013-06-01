@@ -43,7 +43,7 @@ handle_event(startDocument, _State) ->
 	[{cmd, start}, {md, #feed{}}, {entries, []}];
 
 handle_event({endElement, _NS, "feed", _}, [{cmd, _Command}, {md, Feed}, {entries, Entries}]) ->
-	Feed#feed{entries=Entries};
+	Feed#feed{entries=lists:reverse(Entries)};
 
 handle_event({startElement, _NS, "title", _, _Attrs}, [{cmd, start}, {md, Feed}, {entries, Entries}]) ->
 	build_state(titletext, Feed, Entries);
