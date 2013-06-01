@@ -1,8 +1,16 @@
-all: compile
+.PHONY: deps, test
 
-compile:
-	./rebar compile
+all: deps
+	@./rebar compile
+
+deps:
+	@./rebar get-deps
 
 clean:
-	./rebar clean
+	@./rebar clean
 
+distclean: clean
+	@./rebar delete-deps
+
+test:
+	@./rebar eunit
