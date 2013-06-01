@@ -85,6 +85,14 @@ handle_event({startElement, _NS, "link", _, Attrs}, [{cmd, entry}, {md, Feed}, {
  	UpdatedEntry = Entry#feedentry{permalink=extract_link_url(Attrs)},
 	build_state(entry, Feed, [UpdatedEntry|T]);
 
+handle_event({startElement, _NS, "updated", _, _Attrs}, [{cmd, entry}, {md, Feed}, {entries, Entries}]) ->
+	build_state(entryupdatedtext, Feed, Entries);
+
+handle_event({characters, Text}, [{cmd, entryupdatedtext}, {md, Feed}, {entries, Entries}]) ->
+	[Entry|T] = Entries,
+	UpdatedEntry = Entry#feedentry{date=Text},
+	build_state(entry, Feed, [UpdatedEntry|T]);
+
 handle_event({startElement, _NS, "content", _, _Attrs}, [{cmd, entry}, {md, Feed}, {entries, Entries}]) ->
 	build_state(entry, Feed, Entries);
 
