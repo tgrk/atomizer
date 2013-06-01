@@ -60,13 +60,11 @@ handle_event({characters, Text}, [{cmd, permalinktext}, {md, Feed}, {entries, En
 handle_event({startElement, _NS, "link", _, Attrs}, [{cmd, start}, {md, Feed}, {entries, Entries}]) ->
 	build_state(start, Feed#feed{url=extract_link_url(Attrs)}, Entries);
 
-handle_event({startElement, _NS, "name", _, _Attrs}, [{cmd, entry}, {md, Feed}, {entries, Entries}]) ->
+handle_event({startElement, _NS, "name", _, _Attrs}, [{cmd, start}, {md, Feed}, {entries, Entries}]) ->
 	build_state(nametext, Feed, Entries);
 
 handle_event({characters, Text}, [{cmd, nametext}, {md, Feed}, {entries, Entries}]) ->
- 	[Entry|T] = Entries,
- 	UpdatedEntry = Entry#feedentry{author=Text},
-	build_state(entry, Feed, [UpdatedEntry|T]);
+	build_state(start, Feed#feed{author=Text}, Entries);
 
 handle_event({startElement, _NS, "entry", _, _Attrs}, [{cmd, _Command}, {md, Feed}, {entries, Entries}]) ->
 	build_state(entry, Feed, [#feedentry{content=""}|Entries]);
