@@ -5,20 +5,13 @@
 -include("atomizer.hrl").
 
 parse_feed(RawFeed) ->
-	Feed = erlsom:sax(RawFeed, [], fun handle_event/2),
-	#feed
-	{
-		title=Feed#feed.title,
-		author=Feed#feed.author,
-		url=Feed#feed.url,
-		entries=lists:reverse(Feed#feed.entries)
-	}.
+	erlsom:sax(RawFeed, [], fun handle_event/2).
 
 handle_event(startDocument, _State) ->
 	[{cmd, start}, {md, #feed{}}, {entries, []}];
 
 handle_event({endElement, _NS, "channel", _}, [{cmd, _Command}, {md, Feed}, {entries, Entries}]) ->
-	Feed#feed{entries=Entries};
+	Feed#feed{entries=lists:reverse(Entries)};
 
 handle_event({startElement, _NS, "title", _, _Attrs}, [{cmd, start}, {md, Feed}, {entries, Entries}]) ->
 	build_state(titletext, Feed, Entries);
