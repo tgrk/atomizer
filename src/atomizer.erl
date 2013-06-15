@@ -42,7 +42,10 @@ parse_url(Url) ->
 		{error, Reason} ->
 			throw(Reason);
 		{ok, ContentType, _Status, _Headers, Body} ->
-			parse(examine_content_type(ContentType), Body)
+            case examine_content_type(ContentType) of
+                unknown -> parse(examine_content(Body), Body);
+                FeedType -> parse(FeedType, Body)
+            end
 	end.
 
 parse_file(FilePath) ->
@@ -65,13 +68,9 @@ examine_content(Feed) ->
 	
 examine_content_type(ContentType) ->
 	case ContentType of
-		"text/xml" ->
-			rss;
 		"application/rss+xml" ->
 			rss;
 		"application/atom+xml" ->
-			atom;
-		"application/xml" ->
 			atom;
 		_ ->
 			unknown
