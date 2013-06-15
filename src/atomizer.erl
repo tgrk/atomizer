@@ -54,11 +54,13 @@ parse_file(FilePath) ->
 	parse(examine_content(Feed), Feed).
 					
 examine_content(Feed) ->
-	case re:run(Feed, "<feed") of
+    %% using a regex for this is fraught with danger
+    %% but, Cthulhu willing, this should cover most cases
+	case re:run(Feed, "<feed( |>)") of
 		{match, _} ->
 			atom;
 		nomatch ->
-			case re:run(Feed, "<channel") of
+			case re:run(Feed, "<channel( |>)") of
 				{match, _} ->
 					rss;
 				nomatch ->
