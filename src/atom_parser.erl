@@ -58,7 +58,10 @@ handle_event({characters, Text}, [{cmd, permalinktext}, {md, Feed}, {entries, En
 	build_state(start, Feed#feed{url=Text}, Entries);
 
 handle_event({startElement, _NS, "link", _, Attrs}, [{cmd, start}, {md, Feed}, {entries, Entries}]) ->
-	build_state(start, Feed#feed{url=extract_link_url(Attrs)}, Entries);
+    case extract_link_rel(Attrs) of
+        none -> build_state(start, Feed#feed{url=extract_link_url(Attrs)}, Entries);
+        _ -> build_state(start, Feed, Entries)
+    end;
 
 handle_event({startElement, _NS, "name", _, _Attrs}, [{cmd, start}, {md, Feed}, {entries, Entries}]) ->
 	build_state(nametext, Feed, Entries);
@@ -107,6 +110,12 @@ handle_event(_Event, State) ->
 
 extract_link_url(Attrs) ->
 	hd([Url || {attribute, "href", _, _, Url} <- Attrs]).
+
+extract_link_rel(Attrs) ->
+	case [Url || {attribute, "rel", _, _, Url} <- Attrs] of
+        [] -> none;
+        List -> hd(List)
+    end.
 
 build_state(Command, Feed, Entries) ->
 	[{cmd, Command}, {md, Feed}, {entries, Entries}].
