@@ -14,3 +14,6 @@ distclean: clean
 
 test:
 	@./rebar eunit skip_deps=true
+
+run: all
+	@./start.sh
