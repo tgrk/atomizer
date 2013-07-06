@@ -16,7 +16,8 @@ test_feed_details(Feed) ->
         ?_assertEqual("Example Feed", Feed#feed.title),
         ?_assertEqual("John Doe", Feed#feed.author),
         ?_assertEqual("http://example.org/", Feed#feed.url),
-        ?_assertEqual(2, length(Feed#feed.entries))
+        ?_assertEqual(2, length(Feed#feed.entries)),
+	?_assertEqual("2003-12-13T18:30:02Z", Feed#feed.updated)
     ].
 
 test_feed_entry_details(Feed) ->

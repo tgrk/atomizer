@@ -16,7 +16,8 @@ test_feed_details(Feed) ->
         ?_assertEqual("XML.com", Feed#feed.title),
         ?_assertEqual(undefined, Feed#feed.author), %% is this available?
         ?_assertEqual("http://www.xml.com/", Feed#feed.url),
-        ?_assertEqual(3, length(Feed#feed.entries))
+        ?_assertEqual(3, length(Feed#feed.entries)),
+	?_assertEqual("Mon, 06 Sep 2010 00:01:00 +0000", Feed#feed.updated)
     ].
 
 test_feed_entry_details(Feed) ->

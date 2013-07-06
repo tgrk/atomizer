@@ -42,6 +42,7 @@
 		{title,
 		 author,
 		 url,
+		 updated,
 		 entries}).
 
 

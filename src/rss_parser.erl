@@ -25,6 +25,12 @@ handle_event({startElement, _NS, "link", _, _Attrs}, [{cmd, start}, {md, Feed}, 
 handle_event({characters, Text}, [{cmd, linktext}, {md, Feed}, {entries, Entries}]) ->
 	build_state(start, Feed#feed{url=Text}, Entries);
 
+handle_event({startElement, _NS, "lastBuildDate", _, _Attrs}, [{cmd, start}, {md, Feed}, {entries, Entries}]) ->
+	build_state(updatedtext, Feed, Entries);
+
+handle_event({characters, Text}, [{cmd, updatedtext}, {md, Feed}, {entries, Entries}]) ->
+	build_state(start, Feed#feed{updated=Text}, Entries);
+
 handle_event({startElement, _NS, "item", _, _Attrs}, [{cmd, _Command}, {md, Feed}, {entries, Entries}]) ->
 	build_state(entry, Feed, [#feedentry{content=""}|Entries]);
 

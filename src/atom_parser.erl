@@ -69,6 +69,12 @@ handle_event({startElement, _NS, "name", _, _Attrs}, [{cmd, start}, {md, Feed}, 
 handle_event({characters, Text}, [{cmd, nametext}, {md, Feed}, {entries, Entries}]) ->
 	build_state(start, Feed#feed{author=Text}, Entries);
 
+handle_event({startElement, _NS, "updated", _, _Attrs}, [{cmd, start}, {md, Feed}, {entries, Entries}]) ->
+	build_state(updatedtext, Feed, Entries);
+
+handle_event({characters, Text}, [{cmd, updatedtext}, {md, Feed}, {entries, Entries}]) ->
+	build_state(start, Feed#feed{updated=Text}, Entries);
+
 handle_event({startElement, _NS, "entry", _, _Attrs}, [{cmd, _Command}, {md, Feed}, {entries, Entries}]) ->
 	build_state(entry, Feed, [#feedentry{content=""}|Entries]);
 
