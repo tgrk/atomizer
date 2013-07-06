@@ -55,7 +55,7 @@ handle_event({characters, Text}, [{cmd, entrylinktext}, {md, Feed}, {entries, En
  	UpdatedEntry = Entry#feedentry{permalink=Text},
 	build_state(entry, Feed, [UpdatedEntry|T]);
 
-handle_event({startElement, _NS, "encoded", _, _Attrs}, [{cmd, entry}, {md, Feed}, {entries, Entries}]) ->
+handle_event({startElement, _NS, "description", _, _Attrs}, [{cmd, entry}, {md, Feed}, {entries, Entries}]) ->
 	build_state(entrycontenttext, Feed, Entries);
 
 handle_event({characters, Text}, [{cmd, entrycontenttext}, {md, Feed}, {entries, Entries}]) ->

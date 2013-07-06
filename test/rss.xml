@@ -11,7 +11,6 @@
       <description>In this second and final look at applying relational normalization techniques to W3C XML Schema data modeling, Will Provost discusses when not to normalize, the scope of uniqueness and the fourth and fifth normal forms.</description>
       <dc:creator>Will Provost</dc:creator>
       <pubDate>2002-12-04</pubDate>
-      <content:encoded>Flooble wooble mcgoogle</content:encoded> 
     </item>
     <item>
       <title>The .NET Schema Object Model</title>
