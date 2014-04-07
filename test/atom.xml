@@ -23,4 +23,11 @@
      <updated>2003-12-12T13:37:46Z</updated>
      <summary>This is a summary.</summary>
    </entry>
+   <entry>
+     <title>An entry with a different style link</title>
+     <link>http://example.org/2003/12/11/atom05</link>
+     <id>urn:uuid:bab1b7eb-5277-4401-ae3d-5143a67b427a</id>
+     <updated>2003-12-11T09:09:09Z</updated>
+     <summary>From the wild</summary>
+   </entry>
 </feed>

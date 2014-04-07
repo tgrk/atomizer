@@ -16,13 +16,14 @@ test_feed_details(Feed) ->
         ?_assertEqual("Example Feed", Feed#feed.title),
         ?_assertEqual("John Doe", Feed#feed.author),
         ?_assertEqual("http://example.org/", Feed#feed.url),
-        ?_assertEqual(2, length(Feed#feed.entries)),
+        ?_assertEqual(3, length(Feed#feed.entries)),
 	?_assertEqual("2003-12-13T18:30:02Z", Feed#feed.updated)
     ].
 
 test_feed_entry_details(Feed) ->
     FirstEntry = lists:nth(1, Feed#feed.entries),
     SecondEntry = lists:nth(2, Feed#feed.entries),
+    ThirdEntry = lists:nth(3, Feed#feed.entries),
     [
         ?_assertEqual("Atom-Powered Robots Run Amok", FirstEntry#feedentry.title),
         ?_assertEqual(undefined, FirstEntry#feedentry.author),
@@ -34,5 +35,11 @@ test_feed_entry_details(Feed) ->
         ?_assertEqual(undefined, SecondEntry#feedentry.author),
         ?_assertEqual("2003-12-12T13:37:46Z", SecondEntry#feedentry.date),
         ?_assertEqual("http://example.org/2003/12/12/atom04", SecondEntry#feedentry.permalink),
-        ?_assertEqual("", SecondEntry#feedentry.content)
+        ?_assertEqual("", SecondEntry#feedentry.content),
+
+        ?_assertEqual("An entry with a different style link", ThirdEntry#feedentry.title),
+        ?_assertEqual(undefined, ThirdEntry#feedentry.author),
+        ?_assertEqual("2003-12-11T09:09:09Z", ThirdEntry#feedentry.date),
+        ?_assertEqual("http://example.org/2003/12/11/atom05", ThirdEntry#feedentry.permalink),
+        ?_assertEqual("", ThirdEntry#feedentry.content)
    ].

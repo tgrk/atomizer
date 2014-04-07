@@ -90,8 +90,18 @@ handle_event({characters, Text}, [{cmd, entrytitletext}, {md, Feed}, {entries, E
 	build_state(entry, Feed, [UpdatedEntry|T]);
 
 handle_event({startElement, _NS, "link", _, Attrs}, [{cmd, entry}, {md, Feed}, {entries, Entries}]) ->
- 	[Entry|T] = Entries,
- 	UpdatedEntry = Entry#feedentry{permalink=extract_link_url(Attrs)},
+    case extract_link_url(Attrs) of
+        none ->
+            build_state(entrylinktext, Feed, Entries);
+        Url ->
+            [Entry|T] = Entries,
+            UpdatedEntry = Entry#feedentry{permalink=Url},
+            build_state(entry, Feed, [UpdatedEntry|T])
+    end;
+
+handle_event({characters, Text}, [{cmd, entrylinktext}, {md, Feed}, {entries, Entries}]) ->
+	[Entry|T] = Entries,
+	UpdatedEntry = Entry#feedentry{permalink=Text},
 	build_state(entry, Feed, [UpdatedEntry|T]);
 
 handle_event({startElement, _NS, "updated", _, _Attrs}, [{cmd, entry}, {md, Feed}, {entries, Entries}]) ->
@@ -115,7 +125,10 @@ handle_event(_Event, State) ->
 	State.
 
 extract_link_url(Attrs) ->
-	hd([Url || {attribute, "href", _, _, Url} <- Attrs]).
+    case [Url || {attribute, "href", _, _, Url} <- Attrs] of
+        [] -> none;
+        List -> hd(List)
+    end.
 
 extract_link_rel(Attrs) ->
 	case [Url || {attribute, "rel", _, _, Url} <- Attrs] of
