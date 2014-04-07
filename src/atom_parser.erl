@@ -131,7 +131,7 @@ extract_link_url(Attrs) ->
     end.
 
 extract_link_rel(Attrs) ->
-	case [Url || {attribute, "rel", _, _, Url} <- Attrs] of
+	case [Rel || {attribute, "rel", _, _, Rel} <- Attrs] of
         [] -> none;
         List -> hd(List)
     end.
