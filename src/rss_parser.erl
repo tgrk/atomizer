@@ -31,6 +31,12 @@ handle_event({startElement, _NS, "lastBuildDate", _, _Attrs}, [{cmd, start}, {md
 handle_event({characters, Text}, [{cmd, updatedtext}, {md, Feed}, {entries, Entries}]) ->
 	build_state(start, Feed#feed{updated=Text}, Entries);
 
+handle_event({startElement, "dc", "date", _, _Attrs}, [{cmd, start}, {md, Feed}, {entries, Entries}]) ->
+	build_state(updated2text, Feed, Entries);
+
+handle_event({characters, Text}, [{cmd, updated2text}, {md, Feed}, {entries, Entries}]) ->
+	build_state(start, Feed#feed{updated=Text}, Entries);
+
 handle_event({startElement, _NS, "item", _, _Attrs}, [{cmd, _Command}, {md, Feed}, {entries, Entries}]) ->
 	build_state(entry, Feed, [#feedentry{content=""}|Entries]);
 
