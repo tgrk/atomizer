@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://blog.erlang.org/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.erlang.org/" rel="alternate" type="text/html" /><updated>2018-04-17T12:14:25+00:00</updated><id>http://blog.erlang.org/</id><title type="html">A Blog from the Erlang/OTP team</title><subtitle>The Erlang/OTP team at Ericsson, the implementors and maintainers of Erlang/OTP.</subtitle><entry><title type="html">I/O polling options in OTP 21</title><link href="http://blog.erlang.org/IO-Polling/" rel="alternate" type="text/html" title="I/O polling options in OTP 21" /><published>2018-04-11T00:00:00+00:00</published><updated>2018-04-11T00:00:00+00:00</updated><id>http://blog.erlang.org/IO-Polling</id><content type="html" xml:base="http://blog.erlang.org/IO-Polling/">&lt;p&gt;Erlang/OTP 21 will introduce a completely new IO polling implementation.
+This new implementation comes with a new set of tuneable parameters that
+can be used to get the most out of your system. This blog post describes
+the parameters and attempts to describe what they should be used for.&lt;/p&gt;
+
+&lt;p&gt;The I/O polling framework in erts is responsible for delivering events to
+ports and processes that have subscribed to events on file descriptors.
+Before OTP 21 it was the job of an Erlang scheduler thread to deliver these
+events. In OTP 21 dedicated threads are used to deliver the events.&lt;/p&gt;
+
+&lt;p&gt;For information about how the new implementation works under the hood you can
+look at Kenneth Lundin’s presentation &lt;a href=&quot;http://www.erlang-factory.com/euc2017/kenneth-lundin&quot;&gt;Erlang VM News Regarding Dirty Schedulers and I/O&lt;/a&gt;
+from the EUC 2017.&lt;/p&gt;
+
+&lt;h2 id=&quot;kernel-space-vs-user-space-polling&quot;&gt;Kernel-space vs User-space polling&lt;/h2&gt;
+
+&lt;p&gt;In OTP 21 the &lt;code class=&quot;highlighter-rouge&quot;&gt;+K&lt;/code&gt; option has been removed as it is not longer possible to
+choose whether to use kernel-space poll or not at run-time. Instead the decision
+is made at compile time where kernel-space poll will be used by default. If you
+want to use user-space poll instead you have to pass the &lt;code class=&quot;highlighter-rouge&quot;&gt;--disable-kernel-poll&lt;/code&gt;
+flag to configure when compiling Erlang/OTP.&lt;/p&gt;
+
+&lt;p&gt;Before OTP 21 it made sense to run using user-space polling if the file
+descriptors that was subscribed to tended to be removed quickly. For example
+if a HTTP server managed short-lived connection from only a handful other
+machines, it could be beneficial to use user-space poll. However if the
+connection start being long-lived, or the number of concurrent connection
+go up, kernel-space poll becomes better.&lt;/p&gt;
+
+&lt;p&gt;In OTP 21, this is no longer true. Because the polling has been moved to another
+thread, it is almost always better to use kernel-space polling. The user-space
+polling implementation is left in place for platforms that do not support
+parallel update of the kernel-space pollset. Also user-space polling is used
+for individual file descriptors when they cannot be put in a kernel-space pollset
+for some reason.&lt;/p&gt;
+
+&lt;h2 id=&quot;poll-threads-and-poll-sets&quot;&gt;Poll-threads and Poll-sets&lt;/h2&gt;
+
+&lt;p&gt;OTP 21 introduces two new configuration parameters: +IOt and +IOp.&lt;/p&gt;
+
+&lt;h3 id=&quot;configure-iot&quot;&gt;Configure +IOt&lt;/h3&gt;
+
+&lt;p&gt;+IOt controls the number of threads that are used to deliver events. The default
+is 1 and it should be enough for most applications. However on very busy
+systems with many concurrent connection it could be beneficial to increase this.
+One way to get an indication of whether your system could benefit from it is
+by using &lt;a href=&quot;http://erlang.org/doc/man/msacc.html&quot;&gt;msacc&lt;/a&gt;. If you turn it on briefly
+and when examining the &lt;code class=&quot;highlighter-rouge&quot;&gt;msacc:print()&lt;/code&gt; output notice that sleep time
+of the the thread type &lt;code class=&quot;highlighter-rouge&quot;&gt;poll&lt;/code&gt; is low, the system may benefit from increasing the
+number of polling threads.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Eshell V9.3  (abort with ^G)
+1&amp;gt; msacc:start(10000),msacc:print().
+Average thread real-time    : 10000410 us
+Accumulated system run-time :      937 us
+Average scheduler run-time  :      897 us
+
+        Thread      aux check_io emulator       gc    other     port    sleep
+
+Stats per thread:
+     async( 0)    0.00%    0.00%    0.00%    0.00%    0.00%    0.00%  100.00%
+       aux( 1)    0.00%    0.00%    0.00%    0.00%    0.00%    0.00%  100.00%
+dirty_cpu_( 1)    0.00%    0.00%    0.00%    0.00%    0.00%    0.00%  100.00%
+dirty_io_s( 1)    0.00%    0.00%    0.00%    0.00%    0.00%    0.00%  100.00%
+      poll( 0)    0.00%    0.00%    0.00%    0.00%    0.00%    0.00%  100.00%
+ scheduler( 1)    0.00%    0.00%    0.00%    0.00%    0.01%    0.00%   99.99%
+
+Stats per type:
+         async    0.00%    0.00%    0.00%    0.00%    0.00%    0.00%  100.00%
+           aux    0.00%    0.00%    0.00%    0.00%    0.00%    0.00%  100.00%
+dirty_cpu_sche    0.00%    0.00%    0.00%    0.00%    0.00%    0.00%  100.00%
+dirty_io_sched    0.00%    0.00%    0.00%    0.00%    0.00%    0.00%  100.00%
+          poll    0.00%    0.00%    0.00%    0.00%    0.00%    0.00%  100.00%
+     scheduler    0.00%    0.00%    0.00%    0.00%    0.01%    0.00%   99.99%
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In the example above the poll thread is sleeping for 100% of the time so no need to
+increase the number of poll threads.&lt;/p&gt;
+
+&lt;h3 id=&quot;configure-iop&quot;&gt;Configure +IOp&lt;/h3&gt;
+
+&lt;p&gt;+IOp controls the number of pollsets used to put the file descriptors in. This
+options defaults to 1, and it should be very rare for any system to benefit
+from changing this. The only time so far that I have seen it to be beneficial is when the
+kernel-space poll implementation does not scale well when accessed in parallel
+by multiple threads. So if you run &lt;a href=&quot;http://man7.org/linux/man-pages/man1/perf-top.1.html&quot;&gt;perf top&lt;/a&gt;
+(or something similar) on your system and notice that a lot of time is spent
+locking the kernel-space pollset, it would be a good idea to increase the
+number of pollsets used.&lt;/p&gt;</content><author><name></name></author><category term="erts" /><category term="polling" /><category term="tcp" /><summary type="html">Erlang/OTP 21 will introduce a completely new IO polling implementation. This new implementation comes with a new set of tuneable parameters that can be used to get the most out of your system. This blog post describes the parameters and attempts to describe what they should be used for.</summary></entry></feed>

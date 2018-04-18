@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss1full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://rss.slashdot.org/~d/styles/itemcontent.css"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:syn="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/">
+
+<channel rdf:about="http://slashdot.org/">
+<title>Slashdot</title>
+<link>http://slashdot.org/</link>
+<description>News for nerds, stuff that matters</description>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright 1997-2015, DHI Group Inc. All Rights Reserved. Slashdot is a DHI service</dc:rights>
+<dc:date>2016-01-12T16:31:12+00:00</dc:date>
+<dc:publisher>Dice</dc:publisher>
+<dc:creator>help@slashdot.org</dc:creator>
+<dc:subject>Technology</dc:subject>
+<syn:updateBase>1970-01-01T00:00+00:00</syn:updateBase>
+<syn:updateFrequency>1</syn:updateFrequency>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://yro.slashdot.org/story/16/01/12/169214/atf-puts-up-surveillance-cameras-around-seattle--to-catch-illegal-grease-dump?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="http://science.slashdot.org/story/16/01/12/1528208/first-children-have-been-diagnosed-in-100000-genomes-project?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="http://hardware.slashdot.org/story/16/01/12/1426203/explosion-proof-lithium-ion-battery-shuts-down-at-high-temperatures?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="http://it.slashdot.org/story/16/01/12/1335209/french-conservatives-push-law-to-ban-strong-encryption?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="http://tech.slashdot.org/story/16/01/12/0126256/us-military-will-soon-begin-testing-nsas-new-post-snowden-security-measures?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="http://it.slashdot.org/story/16/01/12/0538202/smartwatches-can-be-used-to-spy-on-your-cards-pin-code?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="http://yro.slashdot.org/story/16/01/12/0141234/federal-law-now-says-kids-can-walk-to-school-alone?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="http://news.slashdot.org/story/16/01/12/0130215/tech-professionals-aggravations-rise-but-so-do-salaries?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="http://news.slashdot.org/story/16/01/11/2256214/should-the-us-change-metal-coins?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="http://it.slashdot.org/story/16/01/11/2239231/questions-linger-as-juniper-removes-suspicious-dualec-algorithm?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="http://tech.slashdot.org/story/16/01/11/2236219/uber-to-integrate-with-transloc-public-transit-planning-app?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="http://politics.slashdot.org/story/16/01/11/2233224/space-entrepreneur-opines-donald-trump-could-do-an-inspirational-space-program?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="http://science.slashdot.org/story/16/01/11/2035237/planetary-resources-reveals-out-of-this-world-3d-printing?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="http://yro.slashdot.org/story/16/01/11/2023234/irs-identity-theft-protection-a-tax-deductible-benefit---even-without-a-breach?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+  <rdf:li rdf:resource="http://yro.slashdot.org/story/16/01/11/2029224/police-agencies-using-software-to-generate-threat-scores-of-suspects?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed" />
+ </rdf:Seq>
+</items>
+<image rdf:resource="http://a.fsdn.com/sd/topics/topicslashdot.gif" />
+<textinput rdf:resource="http://slashdot.org/search.pl" />
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rdf+xml" href="http://rss.slashdot.org/slashdot/slashdotMain" /><feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="slashdot/slashdotmain" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /></channel>
+<image rdf:about="http://a.fsdn.com/sd/topics/topicslashdot.gif">
+<title>Slashdot</title>
+<url>http://a.fsdn.com/sd/topics/topicslashdot.gif</url>
+<link>http://slashdot.org/</link>
+</image>
+<item rdf:about="http://yro.slashdot.org/story/16/01/12/169214/atf-puts-up-surveillance-cameras-around-seattle--to-catch-illegal-grease-dump?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>ATF Puts Up Surveillance Cameras Around Seattle&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;... To Catch Illegal Grease Dump</title>
+<link>http://yro.slashdot.org/story/16/01/12/169214/atf-puts-up-surveillance-cameras-around-seattle--to-catch-illegal-grease-dump?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>v3rgEz writes: Last summer, Seattleites noticed that utility polls around town were showing some odd growths: A raft of surveillance cameras that, under Seattle's strict surveillance equipment laws, shouldn't have been there without disclosure and monitoring. But Seattle Police said that they weren't theirs, and one enterprising citizen followed up with a series of public records requests, only to discover that they were actually the ATF's cameras &amp;mdash; on the watch for grease dumpers. Now the requester is fighting for the full list of federal surveillance watching over Seattle, and answers to how often federal agencies pursue what appear to be purely local crimes.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=ATF+Puts+Up+Surveillance+Cameras+Around+Seattle+...+To+Catch+Illegal+Grease+Dump%3A+http%3A%2F%2Fbit.ly%2F1Q2Cgqj"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyro.slashdot.org%2Fstory%2F16%2F01%2F12%2F169214%2Fatf-puts-up-surveillance-cameras-around-seattle--to-catch-illegal-grease-dump%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://yro.slashdot.org/story/16/01/12/169214/atf-puts-up-surveillance-cameras-around-seattle--to-catch-illegal-grease-dump?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://yro.slashdot.org/story/16/01/12/169214/atf-puts-up-surveillance-cameras-around-seattle--to-catch-illegal-grease-dump?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8605281&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>timothy</dc:creator>
+<dc:date>2016-01-12T16:09:00+00:00</dc:date>
+<dc:subject>privacy</dc:subject>
+<slash:department>call-your-block-committee-chairperson</slash:department>
+<slash:section>yro</slash:section>
+<slash:comments>17</slash:comments>
+<slash:hit_parade>17,17,15,14,5,0,0</slash:hit_parade>
+</item>
+<item rdf:about="http://science.slashdot.org/story/16/01/12/1528208/first-children-have-been-diagnosed-in-100000-genomes-project?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>First Children Have Been Diagnosed In 100,000 Genomes Project</title>
+<link>http://science.slashdot.org/story/16/01/12/1528208/first-children-have-been-diagnosed-in-100000-genomes-project?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>Zane C. writes: The 100,000 Genomes project, an organization dedicated to diagnosing and researching rare genetic disorders, has just diagnosed its first 2 patients. After painstakingly analyzing about 3 billion base pairs from the parents of one young girl, and the girl herself, "doctors told them the genetic abnormality &amp;mdash; in a gene called KDM5b &amp;mdash; had been identified". The new information will not yet change the way the young girl, named Georgia, is treated, but it opens up a path for future treatments. For the other girl, Jessica, the genetic analysis provided enough information to diagnose and begin a new treatment. A mutation had occurred "[causing] a condition called Glut1 deficiency syndrome in which the brain cannot get enough energy to function properly." Jessica's brain specifically had not been able to obtain enough sugar to power her brain cells, and as such, doctors prescribed a high fat diet to give her brain an alternate energy source. She has already begun showing improvement.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=First+Children+Have+Been+Diagnosed+In+100%2C000+Genomes+Project%3A+http%3A%2F%2Fbit.ly%2F1W3CnlW"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fscience.slashdot.org%2Fstory%2F16%2F01%2F12%2F1528208%2Ffirst-children-have-been-diagnosed-in-100000-genomes-project%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://science.slashdot.org/story/16/01/12/1528208/first-children-have-been-diagnosed-in-100000-genomes-project?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://science.slashdot.org/story/16/01/12/1528208/first-children-have-been-diagnosed-in-100000-genomes-project?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8605117&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>timothy</dc:creator>
+<dc:date>2016-01-12T15:27:00+00:00</dc:date>
+<dc:subject>biotech</dc:subject>
+<slash:department>steps-into-the-future</slash:department>
+<slash:section>science</slash:section>
+<slash:comments>23</slash:comments>
+<slash:hit_parade>23,22,15,10,2,1,0</slash:hit_parade>
+</item>
+<item rdf:about="http://hardware.slashdot.org/story/16/01/12/1426203/explosion-proof-lithium-ion-battery-shuts-down-at-high-temperatures?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Explosion-Proof Lithium-Ion Battery Shuts Down At High Temperatures</title>
+<link>http://hardware.slashdot.org/story/16/01/12/1426203/explosion-proof-lithium-ion-battery-shuts-down-at-high-temperatures?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>An anonymous reader writes: Scientists have designed a lithium-ion battery that self-regulates according to temperature, to prevent itself from overheating. Reaching extreme temperatures, the battery is able to shut itself down, only restarting once it has cooled. The researchers designed the battery to shut down and restart itself over a repeated heating and cooling cycle, without compromising performance. A polyethylene film is applied to one of the electrodes, which expands and shrinks depending on temperature, to create a conductive/non-conductive material.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Explosion-Proof+Lithium-Ion+Battery+Shuts+Down+At+High+Temperatures%3A+http%3A%2F%2Fbit.ly%2F1ULZKPL"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fhardware.slashdot.org%2Fstory%2F16%2F01%2F12%2F1426203%2Fexplosion-proof-lithium-ion-battery-shuts-down-at-high-temperatures%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://hardware.slashdot.org/story/16/01/12/1426203/explosion-proof-lithium-ion-battery-shuts-down-at-high-temperatures?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://hardware.slashdot.org/story/16/01/12/1426203/explosion-proof-lithium-ion-battery-shuts-down-at-high-temperatures?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8604885&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>timothy</dc:creator>
+<dc:date>2016-01-12T14:35:00+00:00</dc:date>
+<dc:subject>power</dc:subject>
+<slash:department>graceful-failure</slash:department>
+<slash:section>hardware</slash:section>
+<slash:comments>38</slash:comments>
+<slash:hit_parade>38,37,29,28,0,0,0</slash:hit_parade>
+</item>
+<item rdf:about="http://it.slashdot.org/story/16/01/12/1335209/french-conservatives-push-law-to-ban-strong-encryption?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>French Conservatives Push Law To Ban Strong Encryption</title>
+<link>http://it.slashdot.org/story/16/01/12/1335209/french-conservatives-push-law-to-ban-strong-encryption?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>Patrick O'Neill writes: The French parliament this week will examine a bill that would require tech manufacturers of computers, phones, and tablets to build backdoors into any encryption on the device. The anti-encryption bill is being presented by 18 conservative members of the National Assembly as part of a large "Digital Republic" bill. According to the article, The new French bill briefly praises encryption&amp;rsquo;s role in protecting user data but immediately pivots to criticizing the effects of strong encryption on state security forces.
+
+"France must take the initiative and force device manufacturers to take into consideration the imperative of access for law enforcement officers, under the control of a judge and only in the case of an investigation, to those devices," the legislation reads, according to a translation by Khalil Sehnaoui, a Middle-East security specialist and founder of Krypton Security. "The goal is to avoid that individual encryption systems delay the advancement of an investigation."&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=French+Conservatives+Push+Law+To+Ban+Strong+Encryption%3A+http%3A%2F%2Fbit.ly%2F1ZpTbZO"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fit.slashdot.org%2Fstory%2F16%2F01%2F12%2F1335209%2Ffrench-conservatives-push-law-to-ban-strong-encryption%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://it.slashdot.org/story/16/01/12/1335209/french-conservatives-push-law-to-ban-strong-encryption?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://it.slashdot.org/story/16/01/12/1335209/french-conservatives-push-law-to-ban-strong-encryption?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8604699&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>timothy</dc:creator>
+<dc:date>2016-01-12T13:54:00+00:00</dc:date>
+<dc:subject>encryption</dc:subject>
+<slash:department>top-down-control</slash:department>
+<slash:section>it</slash:section>
+<slash:comments>113</slash:comments>
+<slash:hit_parade>113,108,76,60,15,7,4</slash:hit_parade>
+</item>
+<item rdf:about="http://tech.slashdot.org/story/16/01/12/0126256/us-military-will-soon-begin-testing-nsas-new-post-snowden-security-measures?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>US Military Will Soon Begin Testing NSA's New, Post-Snowden Security Measures</title>
+<link>http://tech.slashdot.org/story/16/01/12/0126256/us-military-will-soon-begin-testing-nsas-new-post-snowden-security-measures?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>Patrick O'Neill writes: The U.S. military will closely review the NSA's security measures as concerns mount that foreign adversaries and independent hackers are targeting the American government in cyberspace. "We will determine whether National Security Agency processes and technical controls are effective to limit privileged access to National Security Agency systems and data and to monitor privileged user actions for unauthorized or inappropriate activity," Carol Gorman, the Pentagon's assistant inspector general, wrote in the letter.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=US+Military+Will+Soon+Begin+Testing+NSA's+New%2C+Post-Snowden+Security+Measures%3A+http%3A%2F%2Fbit.ly%2F1ZYbqSX"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftech.slashdot.org%2Fstory%2F16%2F01%2F12%2F0126256%2Fus-military-will-soon-begin-testing-nsas-new-post-snowden-security-measures%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://tech.slashdot.org/story/16/01/12/0126256/us-military-will-soon-begin-testing-nsas-new-post-snowden-security-measures?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://tech.slashdot.org/story/16/01/12/0126256/us-military-will-soon-begin-testing-nsas-new-post-snowden-security-measures?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8600927&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>samzenpus</dc:creator>
+<dc:date>2016-01-12T13:13:00+00:00</dc:date>
+<dc:subject>military</dc:subject>
+<slash:department>knocking-on-the-wall</slash:department>
+<slash:section>technology</slash:section>
+<slash:comments>39</slash:comments>
+<slash:hit_parade>39,37,13,9,6,3,2</slash:hit_parade>
+</item>
+<item rdf:about="http://it.slashdot.org/story/16/01/12/0538202/smartwatches-can-be-used-to-spy-on-your-cards-pin-code?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Smartwatches Can Be Used To Spy On Your Card's PIN Code</title>
+<link>http://it.slashdot.org/story/16/01/12/0538202/smartwatches-can-be-used-to-spy-on-your-cards-pin-code?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>An anonymous reader writes: A researcher has developed a smartwatch app that can interpret hand motions and translate the movements to specific keystrokes on 12-key keypads, like the ones used at ATMs. The app sends the data to a nearby smartphone, which then relays it to a server, for analysis. The whole AI algorithm on which it's built has a 73% accuracy for touchlogging events, and 59% for keylogging. The entire code is on GitHub, along with his research paper, and a YouTube video.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Smartwatches+Can+Be+Used+To+Spy+On+Your+Card's+PIN+Code%3A+http%3A%2F%2Fbit.ly%2F1ON0Quc"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fit.slashdot.org%2Fstory%2F16%2F01%2F12%2F0538202%2Fsmartwatches-can-be-used-to-spy-on-your-cards-pin-code%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://it.slashdot.org/story/16/01/12/0538202/smartwatches-can-be-used-to-spy-on-your-cards-pin-code?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://it.slashdot.org/story/16/01/12/0538202/smartwatches-can-be-used-to-spy-on-your-cards-pin-code?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8601731&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>samzenpus</dc:creator>
+<dc:date>2016-01-12T12:24:00+00:00</dc:date>
+<dc:subject>security</dc:subject>
+<slash:department>lucky-numbers</slash:department>
+<slash:section>it</slash:section>
+<slash:comments>39</slash:comments>
+<slash:hit_parade>39,39,24,21,3,3,2</slash:hit_parade>
+</item>
+<item rdf:about="http://yro.slashdot.org/story/16/01/12/0141234/federal-law-now-says-kids-can-walk-to-school-alone?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Federal Law Now Says Kids Can Walk To School Alone</title>
+<link>http://yro.slashdot.org/story/16/01/12/0141234/federal-law-now-says-kids-can-walk-to-school-alone?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>An anonymous reader writes: There's some good news for "free-range" parents and fans of children being allowed to walk places on their own. A recently approved federal education law will allow students to take alternative forms of transportation to and from school with parental permission. Fastcoexist reports: "Relax, parents. Now you can allow your kids to walk, ride a bike, or take a bus to school, without you or your children getting arrested. The recently-signed Every Student Succeeds Act contains a section (858) that protects the rights of kids to walk or go out alone. The act was sponsored by Utah senator Mike Lee, who is a supporter of the Free Range Kids movement, and provides some hope for parents who feel that their kids should be allowed some autonomy to get by own their own." One can only hope that children will be allowed to go to the park on their own soon as well.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Federal+Law+Now+Says+Kids+Can+Walk+To+School+Alone%3A+http%3A%2F%2Fbit.ly%2F1J08TU4"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyro.slashdot.org%2Fstory%2F16%2F01%2F12%2F0141234%2Ffederal-law-now-says-kids-can-walk-to-school-alone%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://yro.slashdot.org/story/16/01/12/0141234/federal-law-now-says-kids-can-walk-to-school-alone?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://yro.slashdot.org/story/16/01/12/0141234/federal-law-now-says-kids-can-walk-to-school-alone?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8600963&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>samzenpus</dc:creator>
+<dc:date>2016-01-12T10:30:00+00:00</dc:date>
+<dc:subject>government</dc:subject>
+<slash:department>stranger-danger</slash:department>
+<slash:section>yro</slash:section>
+<slash:comments>299</slash:comments>
+<slash:hit_parade>299,295,200,172,33,14,11</slash:hit_parade>
+</item>
+<item rdf:about="http://news.slashdot.org/story/16/01/12/0130215/tech-professionals-aggravations-rise-but-so-do-salaries?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Tech Professionals' Aggravations Rise, But So Do Salaries</title>
+<link>http://news.slashdot.org/story/16/01/12/0130215/tech-professionals-aggravations-rise-but-so-do-salaries?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>Nerval's Lobster writes: Despite some concerns over the stock market and whether the so-called "unicorns" will survive the year, it's apparently still a good time to get into tech: New data from Robert Half Technology suggests that salaries for various tech positions will increase as much as 7 percent this year. Which is good, because tech professionals have confessed to a host of aggravations with their lives, including too-expensive housing, lengthy commutes and gridlock, inability to achieve work-life balance, and a disconnect from their jobs. It's neither the best nor worst of times, but the money could be pretty good.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Tech+Professionals'+Aggravations+Rise%2C+But+So+Do+Salaries%3A+http%3A%2F%2Fbit.ly%2F1W2kDaF"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fnews.slashdot.org%2Fstory%2F16%2F01%2F12%2F0130215%2Ftech-professionals-aggravations-rise-but-so-do-salaries%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://news.slashdot.org/story/16/01/12/0130215/tech-professionals-aggravations-rise-but-so-do-salaries?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://news.slashdot.org/story/16/01/12/0130215/tech-professionals-aggravations-rise-but-so-do-salaries?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8600935&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>samzenpus</dc:creator>
+<dc:date>2016-01-12T08:07:00+00:00</dc:date>
+<dc:subject>business</dc:subject>
+<slash:department>more-money-more-problems</slash:department>
+<slash:section>news</slash:section>
+<slash:comments>115</slash:comments>
+<slash:hit_parade>115,114,45,38,9,5,4</slash:hit_parade>
+</item>
+<item rdf:about="http://news.slashdot.org/story/16/01/11/2256214/should-the-us-change-metal-coins?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Should the US Change Metal Coins?</title>
+<link>http://news.slashdot.org/story/16/01/11/2256214/should-the-us-change-metal-coins?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>coondoggie writes: It may be time for the United States to rethink how the smallest parts of its monetary system &amp;mdash; the penny, nickel and dime &amp;ndash; are made. According to a report this week from watchdogs at the Government Accountability Office, since 2006 the prices of metals used in coins have risen so much that the total production unit costs of the penny and nickel exceed their face value resulting in financial losses to the U.S. Mint.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Should+the+US+Change+Metal+Coins%3F%3A+http%3A%2F%2Fbit.ly%2F1RIaS0G"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fnews.slashdot.org%2Fstory%2F16%2F01%2F11%2F2256214%2Fshould-the-us-change-metal-coins%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://news.slashdot.org/story/16/01/11/2256214/should-the-us-change-metal-coins?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://news.slashdot.org/story/16/01/11/2256214/should-the-us-change-metal-coins?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8600621&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>samzenpus</dc:creator>
+<dc:date>2016-01-12T05:30:00+00:00</dc:date>
+<dc:subject>usa</dc:subject>
+<slash:department>changing-the-recipe</slash:department>
+<slash:section>news</slash:section>
+<slash:comments>420</slash:comments>
+<slash:hit_parade>420,418,267,219,50,19,10</slash:hit_parade>
+</item>
+<item rdf:about="http://it.slashdot.org/story/16/01/11/2239231/questions-linger-as-juniper-removes-suspicious-dualec-algorithm?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Questions Linger As Juniper Removes Suspicious Dual_EC Algorithm</title>
+<link>http://it.slashdot.org/story/16/01/11/2239231/questions-linger-as-juniper-removes-suspicious-dualec-algorithm?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>msm1267 writes: Juniper Networks has removed the backdoored Dual_EC DRBG algorithm from its ScreenOS operating system, but new developments show Juniper deployed Dual_EC long after it was known to be backdoored. Stephen Checkoway, assistant professor of computer science at the University of Illinois at Chicago, said that he and a number of crypto experts looked at dozens of versions of Juniper's NetScreen firewalls and learned that ANSI X9.31 was used exclusively until ScreenOS 6.2 when Juniper added Dual_EC. It also changed the size of the nonce used with ANSI X9.31 from 20 bytes to 32 bytes for Dual_EC, giving an attacker the necessary output to predict the PRNG output. 'And at the same time, Juniper introduced what was just a bizarre bug that caused the ANSI generator to never be used and instead just use the output of Dual_EC. They made all of these changes in the same version update.'&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Questions+Linger+As+Juniper+Removes+Suspicious+Dual_EC+Algorithm%3A+http%3A%2F%2Fbit.ly%2F1UKDNk0"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fit.slashdot.org%2Fstory%2F16%2F01%2F11%2F2239231%2Fquestions-linger-as-juniper-removes-suspicious-dualec-algorithm%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://it.slashdot.org/story/16/01/11/2239231/questions-linger-as-juniper-removes-suspicious-dualec-algorithm?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://it.slashdot.org/story/16/01/11/2239231/questions-linger-as-juniper-removes-suspicious-dualec-algorithm?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8600593&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>samzenpus</dc:creator>
+<dc:date>2016-01-12T03:07:00+00:00</dc:date>
+<dc:subject>security</dc:subject>
+<slash:department>raise-shields</slash:department>
+<slash:section>it</slash:section>
+<slash:comments>70</slash:comments>
+<slash:hit_parade>70,69,44,38,19,9,5</slash:hit_parade>
+</item>
+<item rdf:about="http://tech.slashdot.org/story/16/01/11/2236219/uber-to-integrate-with-transloc-public-transit-planning-app?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Uber To Integrate With TransLoc Public Transit Planning App</title>
+<link>http://tech.slashdot.org/story/16/01/11/2236219/uber-to-integrate-with-transloc-public-transit-planning-app?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>An anonymous reader writes: Transit tech firm TransLoc has agreed to partner with global ride-sharing giant Uber, to help public transport users plan their routes and schedule rides to reach their final destination. The set up will help users plan trips via different modes of transport and offer an end-to-end route planning service, according to the companies. The partnership will see the integration of Uber's ride-sharing API and the TransLoc 'Rider' app, which provides real-time public transit tracking, arrival predictions and proximity alerts. Users will be able to simply input their destination in the Rider app and receive a tailored journey, incorporating the 'optimal combination' of walking, public transit options and Uber.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Uber+To+Integrate+With+TransLoc+Public+Transit+Planning+App%3A+http%3A%2F%2Fbit.ly%2F1N3JgwC"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftech.slashdot.org%2Fstory%2F16%2F01%2F11%2F2236219%2Fuber-to-integrate-with-transloc-public-transit-planning-app%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://tech.slashdot.org/story/16/01/11/2236219/uber-to-integrate-with-transloc-public-transit-planning-app?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://tech.slashdot.org/story/16/01/11/2236219/uber-to-integrate-with-transloc-public-transit-planning-app?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8600587&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>samzenpus</dc:creator>
+<dc:date>2016-01-12T01:20:00+00:00</dc:date>
+<dc:subject>business</dc:subject>
+<slash:department>working-together</slash:department>
+<slash:section>technology</slash:section>
+<slash:comments>15</slash:comments>
+<slash:hit_parade>15,14,7,5,0,0,0</slash:hit_parade>
+</item>
+<item rdf:about="http://politics.slashdot.org/story/16/01/11/2233224/space-entrepreneur-opines-donald-trump-could-do-an-inspirational-space-program?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Space Entrepreneur Opines Donald Trump Could Do an Inspirational Space Program</title>
+<link>http://politics.slashdot.org/story/16/01/11/2233224/space-entrepreneur-opines-donald-trump-could-do-an-inspirational-space-program?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>MarkWhittington writes: Robert Bigelow of Bigelow Aerospace opened his new Twitter account with the suggestion that Donald Trump, the mercurial businessman who is running for president, might just give the United States an inspirational space program. Then, thinking better of the idea, Bigelow deleted the tweet and replaced it with an image of the Olympus inflatable space module, which his company envisions as being the basis of a commercial space station.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Space+Entrepreneur+Opines+Donald+Trump+Could+Do+an+Inspirational+Space+Program%3A+http%3A%2F%2Fbit.ly%2F1SeDtfz"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fpolitics.slashdot.org%2Fstory%2F16%2F01%2F11%2F2233224%2Fspace-entrepreneur-opines-donald-trump-could-do-an-inspirational-space-program%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://politics.slashdot.org/story/16/01/11/2233224/space-entrepreneur-opines-donald-trump-could-do-an-inspirational-space-program?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://politics.slashdot.org/story/16/01/11/2233224/space-entrepreneur-opines-donald-trump-could-do-an-inspirational-space-program?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8600569&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>samzenpus</dc:creator>
+<dc:date>2016-01-12T00:38:00+00:00</dc:date>
+<dc:subject>space</dc:subject>
+<slash:department>you're-fired-off-into-space</slash:department>
+<slash:section>politics</slash:section>
+<slash:comments>132</slash:comments>
+<slash:hit_parade>132,130,85,69,17,4,4</slash:hit_parade>
+</item>
+<item rdf:about="http://science.slashdot.org/story/16/01/11/2035237/planetary-resources-reveals-out-of-this-world-3d-printing?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Planetary Resources Reveals Out-of-This-World 3D Printing</title>
+<link>http://science.slashdot.org/story/16/01/11/2035237/planetary-resources-reveals-out-of-this-world-3d-printing?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>Zothecula writes: If one is going to get into the asteroid mining business, one needs to prove that you can do something with what's brought back. That seems to be the thinking behind Planetary Resources' recent presentation at CES in Las Vegas, where the asteroid mining company unveiled the first object 3D printed using extraterrestrial materials. Made in collaboration with 3D Systems, the nickel-iron sculpture represents a stylized, geometric spacecraft, such as might be used for asteroid mining or prospecting. Planetary Resources says it is representative of what could be printed in a weightless environment.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Planetary+Resources+Reveals+Out-of-This-World+3D+Printing%3A+http%3A%2F%2Fbit.ly%2F1mRl2jR"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fscience.slashdot.org%2Fstory%2F16%2F01%2F11%2F2035237%2Fplanetary-resources-reveals-out-of-this-world-3d-printing%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://science.slashdot.org/story/16/01/11/2035237/planetary-resources-reveals-out-of-this-world-3d-printing?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://science.slashdot.org/story/16/01/11/2035237/planetary-resources-reveals-out-of-this-world-3d-printing?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8600273&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>samzenpus</dc:creator>
+<dc:date>2016-01-11T23:55:00+00:00</dc:date>
+<dc:subject>space</dc:subject>
+<slash:department>from-the-asteroid-to-your-table</slash:department>
+<slash:section>science</slash:section>
+<slash:comments>32</slash:comments>
+<slash:hit_parade>32,31,16,15,3,2,0</slash:hit_parade>
+</item>
+<item rdf:about="http://yro.slashdot.org/story/16/01/11/2023234/irs-identity-theft-protection-a-tax-deductible-benefit---even-without-a-breach?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>IRS: Identity Theft Protection a Tax Deductible Benefit - Even Without a Breach</title>
+<link>http://yro.slashdot.org/story/16/01/11/2023234/irs-identity-theft-protection-a-tax-deductible-benefit---even-without-a-breach?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>chicksdaddy writes: The U.S. Internal Revenue Service has announced that it will treat identity theft protection as a non-taxable, non-reportable benefit that companies can offer &amp;mdash; even when the company in question hasn't experienced a data breach, and regardless of whether it is offered by an employer to employees, or by other businesses (such as online retailers) to its customers, the blog E for ERISA reports. In short: companies can now deduct the cost of offering identity theft protection as a benefit for employees or extending it to customers, even if their data hasn't been exposed to hackers. The announcement comes only four months after an earlier announcement by the IRS that it would treat identity theft protection offered to employees or customers in the wake of a data breach as a non-taxable event. Comments to the IRS following the earlier decision suggested that many businesses view a data breach as "inevitable" rather than as a remote risk. The truth of that statement was made clear to the IRS itself, which had to provide identity theft protection earlier this year in response to a hack of its online database of past-filed returns and other filed documents which ultimately affected over 300,000 taxpayers. The new IRS guidance could be a boon to providers of identity protection services such as Experian and Lifelock, though maybe not as much as one would expect. Data from Experian suggests that consumer adoption rates for identity theft protection services is low. Fewer than 10% of those potentially affected by a breach opt for free identity protection services when they are offered. For very large breaches that number is even lower &amp;mdash; in the single digit percentages.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=IRS%3A+Identity+Theft+Protection+a+Tax+Deductible+Benefit+-+Even+Without+a+Breach%3A+http%3A%2F%2Fbit.ly%2F1W0HNhm"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyro.slashdot.org%2Fstory%2F16%2F01%2F11%2F2023234%2Firs-identity-theft-protection-a-tax-deductible-benefit---even-without-a-breach%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://yro.slashdot.org/story/16/01/11/2023234/irs-identity-theft-protection-a-tax-deductible-benefit---even-without-a-breach?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://yro.slashdot.org/story/16/01/11/2023234/irs-identity-theft-protection-a-tax-deductible-benefit---even-without-a-breach?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8600225&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>samzenpus</dc:creator>
+<dc:date>2016-01-11T23:11:00+00:00</dc:date>
+<dc:subject>privacy</dc:subject>
+<slash:department>write-it-up</slash:department>
+<slash:section>yro</slash:section>
+<slash:comments>48</slash:comments>
+<slash:hit_parade>48,43,23,19,4,3,2</slash:hit_parade>
+</item>
+<item rdf:about="http://yro.slashdot.org/story/16/01/11/2029224/police-agencies-using-software-to-generate-threat-scores-of-suspects?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed">
+<title>Police Agencies Using Software To Generate "Threat Scores" of Suspects</title>
+<link>http://yro.slashdot.org/story/16/01/11/2029224/police-agencies-using-software-to-generate-threat-scores-of-suspects?utm_source=rss1.0mainlinkanon&amp;utm_medium=feed</link>
+<description>Koreantoast writes: It's no secret that governments across the globe have been taking advantage of new technologies to create stronger surveillance systems on citizens. While many have focused on the actions of intelligence agencies, local police departments continue to create more sophisticated systems as well. A recent article highlights one new system deployed by the Fresno, California police department, Intrado's Beware. The system scours police data, public records, social media, and public Internet data to provide a "threat level" of a potential suspect or residency. The software is part of a broader trend of military counterinsurgency tools and algorithms being repurposed for civil use. While these tools can help police manage actively dangerous situations, providing valuable intel when responding to calls, the analysis also raises serious civil liberties questions both in privacy (where the data comes from) and accuracy (is the data valid, was the analysis done correctly). Also worrying are the long term ramifications to such technologies: there has already been some speculation about "citizen scores," could a criminal threat score be something similar? At very least, as Matt Cagle of the ACLU noted, "there needs to be a meaningful debate... there needs to be safeguards and oversight."&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Police+Agencies+Using+Software+To+Generate+%22Threat+Scores%22+of+Suspects%3A+http%3A%2F%2Fbit.ly%2F1RHlqNv"&gt;&lt;img src="http://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyro.slashdot.org%2Fstory%2F16%2F01%2F11%2F2029224%2Fpolice-agencies-using-software-to-generate-threat-scores-of-suspects%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="http://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=http://yro.slashdot.org/story/16/01/11/2029224/police-agencies-using-software-to-generate-threat-scores-of-suspects?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="http://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;                                                                                                                                                                              
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://yro.slashdot.org/story/16/01/11/2029224/police-agencies-using-software-to-generate-threat-scores-of-suspects?utm_source=rss1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;&lt;iframe src="http://slashdot.org/slashdot-it.pl?op=discuss&amp;amp;id=8600249&amp;amp;smallembed=1" style="height: 300px; width: 100%; border: none;"&gt;&lt;/iframe&gt;</description>
+<dc:creator>samzenpus</dc:creator>
+<dc:date>2016-01-11T22:28:00+00:00</dc:date>
+<dc:subject>crime</dc:subject>
+<slash:department>pre-crime-unit</slash:department>
+<slash:section>yro</slash:section>
+<slash:comments>119</slash:comments>
+<slash:hit_parade>119,114,77,66,15,7,4</slash:hit_parade>
+</item>
+<textinput rdf:about="http://slashdot.org/search.pl">
+<title>Search Slashdot</title>
+<description>Search Slashdot stories</description>
+<name>query</name>
+<link>http://slashdot.org/search.pl</link>
+</textinput>
+</rdf:RDF>
