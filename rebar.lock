@@ -1,0 +1,8 @@
+{"1.1.0",
+[{<<"erlsom">>,{pkg,<<"erlsom">>,<<"1.4.1">>},0},
+ {<<"eunit_formatters">>,{pkg,<<"eunit_formatters">>,<<"0.5.0">>},0}]}.
+[
+{pkg_hash,[
+ {<<"erlsom">>, <<"53DBACF35ADFEA6F0714FD0E4A7B0720D495E88C5E24E12C5DC88C7B62BD3E49">>},
+ {<<"eunit_formatters">>, <<"6A9133943D36A465D804C1C5B6E6839030434B8879C5600D7DDB5B3BAD4CCB59">>}]}
+].
