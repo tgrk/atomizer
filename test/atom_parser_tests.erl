@@ -3,13 +3,8 @@
 -include_lib("eunit/include/eunit.hrl").
 -include_lib("../src/atomizer.hrl").
 
-atom_parse_test_() ->
+atom_parser_test_() ->
     {foreach, fun read_file/0, [fun test_feed_details/1, fun test_feed_entry_details/1]}.
-
-read_file() ->
-    {ok, Raw} = file:read_file("../test/atom.xml"),
-    Feed = atom_parser:parse_feed(Raw),
-    Feed.
 
 test_feed_details(Feed) ->
     [
@@ -17,7 +12,7 @@ test_feed_details(Feed) ->
         ?_assertEqual("John Doe", Feed#feed.author),
         ?_assertEqual("http://example.org/", Feed#feed.url),
         ?_assertEqual(3, length(Feed#feed.entries)),
-	?_assertEqual("2003-12-13T18:30:02Z", Feed#feed.updated)
+	    ?_assertEqual("2003-12-13T18:30:02Z", Feed#feed.updated)
     ].
 
 test_feed_entry_details(Feed) ->
@@ -43,3 +38,12 @@ test_feed_entry_details(Feed) ->
         ?_assertEqual("http://example.org/2003/12/11/atom05", ThirdEntry#feedentry.permalink),
         ?_assertEqual("", ThirdEntry#feedentry.content)
    ].
+
+read_file() ->
+    read_file("atom.xml").
+
+read_file(FeedFile) ->
+    {ok, Cwd} = file:get_cwd(),
+    Path = filename:join([Cwd, "test", "data", FeedFile]),
+    {ok, Raw} = file:read_file(Path),
+    atom_parser:parse_feed(Raw).
