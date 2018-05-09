@@ -6,18 +6,13 @@
 rss_parse_test_() ->
     {foreach, fun read_file/0, [fun test_feed_details/1, fun test_feed_entry_details/1]}.
 
-read_file() ->
-    {ok, Raw} = file:read_file("../test/rss.xml"),
-    Feed = rss_parser:parse_feed(Raw),
-    Feed.
-
 test_feed_details(Feed) ->
     [
         ?_assertEqual("XML.com", Feed#feed.title),
         ?_assertEqual(undefined, Feed#feed.author), %% is this available?
         ?_assertEqual("http://www.xml.com/", Feed#feed.url),
         ?_assertEqual(3, length(Feed#feed.entries)),
-	?_assertEqual("Mon, 06 Sep 2010 00:01:00 +0000", Feed#feed.updated)
+	    ?_assertEqual("Mon, 06 Sep 2010 00:01:00 +0000", Feed#feed.updated)
     ].
 
 test_feed_entry_details(Feed) ->
@@ -43,3 +38,12 @@ test_feed_entry_details(Feed) ->
         ?_assertEqual("http://www.xml.com/pub/a/2002/12/04/svg.html", ThirdEntry#feedentry.permalink),
         ?_assertEqual("In this month's SVG column, Antoine Quint looks back at SVG's journey through 2002 and looks forward to 2003.", ThirdEntry#feedentry.content)
     ].
+
+read_file() ->
+    read_file("rss.xml").
+
+read_file(FeedFile) ->
+    {ok, Cwd} = file:get_cwd(),
+    Path = filename:join([Cwd, "test", "data", FeedFile]),
+    {ok, Raw} = file:read_file(Path),
+    rss_parser:parse_feed(Raw).
