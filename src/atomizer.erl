@@ -91,13 +91,10 @@ parse(unknown, _Feed) ->
 	unknown;
 
 parse(rss, Feed) ->
-	io:format("parse.rss~n", []),
 	rss_parser:parse_feed(Feed);
 parse(rdf, Feed) ->
-io:format("parse.rdf~n", []),
 	rdf_parser:parse_feed(Feed);
 parse(atom, Feed) ->
-	io:format("parse.atom~n", []),
 	atom_parser:parse_feed(Feed).
 
 contains(Feed, Expression) ->
