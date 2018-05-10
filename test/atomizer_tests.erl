@@ -18,17 +18,17 @@ test_atomizer_api() ->
   ok.
 
 test_feed_burner() ->
-  ?assert(
-    is_tuple(
-      atomizer:parse_url(
-        "http://feeds.feedburner.com/blogspot/gJZg")
-    )
+  assert_feed(
+    atomizer:parse_url("http://feeds.feedburner.com/blogspot/gJZg")
   ).
 
 test_erlang_blog_feed() ->
-  ?assert(
-    is_tuple(
-      atomizer:parse_url(
-        "http://blog.erlang.org/feed.xml")
-    )
+  assert_feed(
+    atomizer:parse_url("http://blog.erlang.org/feed.xml")
   ).
+
+assert_feed(Feed) ->
+  ?assertMatch({feed, _, _, _, _, _}, Feed),
+  ?assert(length(Feed#feed.entries)> 0),
+  ?assert(is_tuple(hd(Feed#feed.entries))),
+  ok.
