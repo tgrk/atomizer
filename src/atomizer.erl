@@ -33,6 +33,7 @@
 -module(atomizer).
 
 -export([parse_url/1, parse_file/1]).
+-export([parse_feed/1, parse_feed/2]).
 
 -include_lib("xmerl/include/xmerl.hrl").
 -include("atomizer.hrl").
@@ -51,7 +52,17 @@ parse_url(Url) ->
 	end.
 
 parse_file(FilePath) ->
-	{ok, Raw} = file:read_file(FilePath),
+	case file:read_file(FilePath) of
+		{error, Reason} ->
+			throw(Reason);
+		{ok, Raw} ->
+			parse_feed(Raw)
+	end.
+
+parse_feed(FeedType, Raw) when is_atom(FeedType) ->
+	parse(FeedType, Raw).
+
+parse_feed(Raw) when is_binary(Raw) ->
 	Feed = binary_to_list(Raw),
 	parse(examine_content(Feed), Feed).
 
