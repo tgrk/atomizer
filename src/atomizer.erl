@@ -62,7 +62,7 @@ examine_content(Feed) ->
 		true ->
 			atom;
 		false ->
-			case contains(Feed, "<channel rdf( |>)") of
+			case contains(Feed, "<rdf( |>)") of
 				true ->
 					rdf;
 				false ->
@@ -83,7 +83,8 @@ examine_content_type(ContentType) ->
 			atom;
 		"application/rdf+xml" ->
 			rdf;
-		_ ->
+		Other ->
+			error_logger:info_msg("Atomizer - unknown content type ~p", [Other]),
 			unknown
 	end.
 
@@ -91,10 +92,13 @@ parse(unknown, _Feed) ->
 	unknown;
 
 parse(rss, Feed) ->
+	error_logger:info_msg("Atomizer - parsing RSS format", []),
 	rss_parser:parse_feed(Feed);
 parse(rdf, Feed) ->
+	error_logger:info_msg("Atomizer - parsing RDF format", []),
 	rdf_parser:parse_feed(Feed);
 parse(atom, Feed) ->
+	error_logger:info_msg("Atomizer - parsing Atom format", []),
 	atom_parser:parse_feed(Feed).
 
 contains(Feed, Expression) ->
